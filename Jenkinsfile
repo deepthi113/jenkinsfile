@@ -5,7 +5,7 @@ node {
     }
     stage ("build")
     {
-    bat 'mvn package'
+    sh 'mvn package'
     }    
     stage ("deploy")
     {
