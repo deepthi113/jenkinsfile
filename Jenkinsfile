@@ -9,7 +9,7 @@ node {
     }    
     stage ("deploy")
     {
-        sh 'cp -R "/var/lib/jenkins/workspace/jenkins/gameoflife-web/target/gameoflife.war" "/usr/share/tomcat/webapps"'
+        sh 'su cp -R "/var/lib/jenkins/workspace/jenkins/gameoflife-web/target/gameoflife.war" "/usr/share/tomcat/webapps"'
     }
 
     
